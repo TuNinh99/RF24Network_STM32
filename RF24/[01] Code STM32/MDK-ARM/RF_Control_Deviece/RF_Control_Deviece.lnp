@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"rf_control_deviece\main.o"
+"rf_control_deviece\stm32f1xx_it.o"
+"rf_control_deviece\stm32f1xx_hal_msp.o"
+"rf_control_deviece\stm32f1xx_hal_gpio_ex.o"
+"rf_control_deviece\stm32f1xx_hal_spi.o"
+"rf_control_deviece\stm32f1xx_hal.o"
+"rf_control_deviece\stm32f1xx_hal_rcc.o"
+"rf_control_deviece\stm32f1xx_hal_rcc_ex.o"
+"rf_control_deviece\stm32f1xx_hal_gpio.o"
+"rf_control_deviece\stm32f1xx_hal_dma.o"
+"rf_control_deviece\stm32f1xx_hal_cortex.o"
+"rf_control_deviece\stm32f1xx_hal_pwr.o"
+"rf_control_deviece\stm32f1xx_hal_flash.o"
+"rf_control_deviece\stm32f1xx_hal_flash_ex.o"
+"rf_control_deviece\stm32f1xx_hal_exti.o"
+"rf_control_deviece\stm32f1xx_hal_tim.o"
+"rf_control_deviece\stm32f1xx_hal_tim_ex.o"
+"rf_control_deviece\stm32f1xx_hal_uart.o"
+"rf_control_deviece\nrf24.o"
+"rf_control_deviece\lcd16x2.o"
+"rf_control_deviece\startup_stm32f10x_md.o"
+"rf_control_deviece\system_stm32f10x.o"
+--library_type=microlib --strict --scatter "RF_Control_Deviece\RF_Control_Deviece.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RF_Control_Deviece.map" -o RF_Control_Deviece\RF_Control_Deviece.axf
